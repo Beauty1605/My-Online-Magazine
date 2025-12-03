@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Magazine</title>
+    <style>
+        body { font-family: Arial; margin:0; background:#f5f5f5; }
+        header { background:#222; color:#fff; padding:20px; text-align:center; }
+        nav { background:#333; padding:10px; text-align:center; }
+        nav a { color:#fff; margin:0 10px; text-decoration:none; }
+        .container { width:90%; margin:auto; padding:20px; }
+
+        .section-title { font-size:22px; margin-top:20px; }
+        .articles { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:15px; }
+        .card { background:#fff; padding:15px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+        .card img { width:100%; height:150px; object-fit:cover; border-radius:8px; }
+
+        .subscribe { background:#fff; padding:20px; margin-top:30px; text-align:center; border-radius:8px; }
+        .subscribe input { width:80%; padding:10px; margin-top:10px; }
+        .subscribe button { padding:10px 20px; margin-top:10px; }
+
+        footer { background:#222; color:#fff; text-align:center; padding:15px; margin-top:30px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Online Magazine</h1>
+</header>
+
+<nav>
+    <a href="#news">News</a>
+    <a href="#tech">Tech</a>
+    <a href="#sports">Sports</a>
+</nav>
+
+<div class="container">
+
+    <!-- News -->
+    <h2 class="section-title" id="news">News</h2>
+    <div class="articles">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyPCYiR6Q7_5Pkdcr68d7BqXNmWNPD7p0pfA&s ">
+            <h3>Breaking: New Policy Introduced</h3>
+            <p>Government announces major update affecting all cities.</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/rising-stock-market-graph-showing-upward-trend-stock-prices-symbolizing-financial-growth-positive-market-performance-investment-success-ideal-themes-economic-progress_1080238-6402.jpg">
+            <h3>Market Trends Rising</h3>
+            <p>Investors see positive growth in upcoming sectors.</p>
+        </div>
+    </div>
+
+    <!-- Tech -->
+    <h2 class="section-title" id="tech">Tech</h2>
+    <div class="articles">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/shagun/zfold6/D314637709_Samsung_Galaxy_M17_NEW-LAUNCH_New_Category-page-hero._SX1035_QL85_.jpg">
+            <h3>New Smartphone Launched</h3>
+            <p>Budget-friendly phone with strong performance.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.claysys.com/app/uploads/2023/02/Artificial-Intelligence-in-Everyday-Life.png">
+            <h3>AI in Daily Life</h3>
+            <p>How AI is helping simplify daily tasks.</p>
+        </div>
+    </div>
+
+    <!-- Subscription -->
+    <div class="subscribe">
+        <h2>Subscribe for Updates</h2>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 My Online Magazine
+</footer>
+
+</body>
+</html>
